@@ -103,3 +103,32 @@ input[type="submit"]:hover {
 .ll1 a:hover {
   color: #0056b3;
 }
+
+.password-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.password-container label {
+  margin-bottom: 5px; /* Adds spacing below the label */
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* Space for the eye icon */
+}
+
+.password-container .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 65%; /* Aligns with the input field */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: gray;
+}
+
+.password-container .eye-icon.visible {
+  color: black;
+}

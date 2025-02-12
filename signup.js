@@ -10,13 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const password = document.getElementById("p1").value;
 
     if (firstName && lastName && email && password) {
-      // Save user details to localStorage
       localStorage.setItem("userEmail", email);
       localStorage.setItem("userPassword", password);
       alert("Signup successful! You can now log in.");
-      window.location.href = "login.html"; // Redirect to login page
+      window.location.href = "login.html";
     } else {
       alert("Please fill in all fields.");
     }
   });
+  const passwordInput = document.getElementById("p1");
+  const eyeIcon = document.getElementById("togglePassword");
+
+  if (eyeIcon) {
+    eyeIcon.addEventListener("click", function () {
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        eyeIcon.classList.add("visible");
+      } else {
+        passwordInput.type = "password";
+        eyeIcon.classList.remove("visible");
+      }
+    });
+  }
 });

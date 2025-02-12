@@ -1,18 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <link href="login.css" rel="stylesheet" />
     <script defer src="login.js"></script>
   </head>
   <body>
-    <form>
-      <div class="container">
+    <div class="main">
+      <form>
         <h2>Real-Time Chat Application</h2>
         <div class="e11">
           <label>Enter Username (Email):</label>
           <input type="email" placeholder="Enter Email" id="e1" required />
         </div>
-        <div class="p11">
+        <div class="p11 password-container">
           <label>Enter Password:</label>
           <input
             type="password"
@@ -20,12 +23,13 @@
             placeholder="Enter Password"
             required
           />
+          <span class="eye-icon" id="togglePassword">👁️</span>
         </div>
         <div class="l11">
           <input type="submit" value="LOGIN" />
         </div>
         <p>Not yet Signed Up? <a href="signup.html">Sign up</a></p>
-      </div>
-    </form>
+      </form>
+    </div>
   </body>
 </html>
