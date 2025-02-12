@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-Time Chat Application</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="auth.js"></script>
+    <!-- Authentication script -->
+    <script defer src="index.js"></script>
+    <!-- Chat functionality -->
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar for Users -->
+      <iframe src="users.html" class="sidebar"></iframe>
+
+      <!-- Chat Section -->
+      <div class="chat-section">
+        <iframe id="chat-frame" src="" class="chat-frame"></iframe>
+        <div class="chat-placeholder">
+          <div class="chat-bubble">
+            <p>Select a user to start chatting</p>
+            <div class="typing-animation">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

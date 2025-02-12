@@ -1,0 +1,105 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Fields */
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Ensure email field also gets 100% width */
+input[type="text"],
+input[type="email"], /* Added email field */
+input[type="password"],
+input[type="file"],
+input[type="submit"] {
+  width: 100%; /* Ensures full width */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Style for containers */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f11,
+.l11 {
+  width: 48%;
+}
+
+.e11 e1 {
+  margin-bottom: 15px;
+  width: 100;
+}
+
+.s11 {
+  text-align: center;
+}
+
+.ll1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ll1 p {
+  font-size: 14px;
+}
+
+.ll1 a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.ll1 a:hover {
+  color: #0056b3;
+}

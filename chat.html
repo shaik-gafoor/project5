@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Chat UI</title>
+    <link href="chat.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script defer src="chat.js"></script>
+  </head>
+  <body>
+    <div class="chat-wrapper">
+      <section class="chat-box">
+        <!-- Chat Header -->
+        <header class="chat-header">
+          <a href="#" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+          <img src="img1 .jpg" alt="Profile Picture" class="profile-pic" />
+          <div class="chat-info">
+            <span class="chat-username">Sai Krishna</span>
+            <p class="chat-status" id="typing-status">Active now</p>
+          </div>
+        </header>
+
+        <!-- Chat Messages -->
+        <div class="chat-container" id="chat-container">
+          <div class="message received">
+            <img src="img1.jpg" alt="Profile" class="message-profile-pic" />
+            <div class="message-text">Hello! How are you doing?</div>
+          </div>
+
+          <div class="message sent">
+            <div class="message-text">
+              Hey! I'm doing great. What about you?
+            </div>
+            <img src="img.jpg" alt="Profile" class="message-profile-pic" />
+          </div>
+        </div>
+
+        <!-- Chat Input -->
+        <div class="chat-input">
+          <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+            style="display: none"
+          />
+          <button id="gallery-btn"><i class="fas fa-image"></i></button>
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type a message..."
+            autocomplete="off"
+          />
+          <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
